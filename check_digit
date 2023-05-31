@@ -1,0 +1,15 @@
+def check_digits(n):
+    if len(n) == 1 and n.isdigit():
+        #checks  if all string characters are digits
+        # and if there's atleast 1 character
+        return True
+    else:
+        return False
+
+while True:
+    Mynumber = input("enter the number: ") #user defined input
+    if check_digits(Mynumber):
+        print ("this is a valid single digit")
+        break
+    else:
+        print ("invalid input:", Mynumber)
